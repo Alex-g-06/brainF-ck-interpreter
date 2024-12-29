@@ -21,7 +21,7 @@ for x in code:
             values.append(0)
     
     elif x==".":
-        print(chr(values[pointer]))
+        print(chr(values[pointer]),end="")
 
     elif x==",":
         user=input("character:")
