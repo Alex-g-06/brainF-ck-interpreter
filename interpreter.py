@@ -3,7 +3,11 @@ values=[0]
 pointer=0
 
 for x in code:
-    if x=="+":
+    if x==",":
+        user=input("character:")
+        values[pointer]=ord(user)
+    
+    elif x=="+":
         values[pointer]=values[pointer]+1
         if values[pointer]==256:
             values[pointer]=0
@@ -23,10 +27,6 @@ for x in code:
     elif x==".":
         print(chr(values[pointer]),end="")
 
-    elif x==",":
-        user=input("character:")
-        values[pointer]=ord(user)
-
-
+    
 print(values)
     
